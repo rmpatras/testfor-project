@@ -12,11 +12,6 @@ public class Player {
         reader=new Scanner(System.in);
         totalPoints=0;
     }
-    public String getName() {
-        String name;
-        name = reader.nextLine();
-        return name;
-    }
 
     public String getAnswer(){
         String answer;

@@ -14,7 +14,7 @@ public class Game {
 
     public void Play(){
         System.out.println("Δώσε όνομα: ");
-        String name= play1.getName();
+        String name= play1.getAnswer();
         System.out.println();
 
          Round round=new Round();
@@ -49,7 +49,6 @@ public class Game {
                     playerBet = play1.getAnswer();
 
                     while (!round.ValidBet(playerBet)) {
-                        System.out.println("Πόνταρε 250,500,750 ή 1000");
                         playerBet = play1.getAnswer();
                     }
 

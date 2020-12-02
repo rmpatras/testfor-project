@@ -39,15 +39,16 @@ public class Round {
 
 
     public boolean ValidBet(String playerBet){
-        if (playerBet.equals("250") || playerBet.equals("500") || playerBet.equals("750") | playerBet.equals("1000")) {
+        if (playerBet.equals("250") || playerBet.equals("500") || playerBet.equals("750") || playerBet.equals("1000")) {
             return true;
         }
+        System.out.println("Πόνταρε 250,500,750 ή 1000");
         return false;
     }
 
 
     public boolean ValidAnswer(String playerAnswer){
-        while ((!playerAnswer.equals("1") && !playerAnswer.equals("2") && !playerAnswer.equals("3") && !playerAnswer.equals("4"))) {
+       if ((!playerAnswer.equals("1") && !playerAnswer.equals("2") && !playerAnswer.equals("3") && !playerAnswer.equals("4"))) {
             System.out.println("Μη αποδεκτός αριθμός,πληκτρολόγησε ξανα ");
             return false;
         }
